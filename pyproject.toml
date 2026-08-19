@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loomground-vertical"
+version = "0.1.0"
+description = "The surface a domain vertical registers itself through: subject vocabulary, jurisdiction packs, and a requirements house."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "flxk1" }]
+keywords = ["governance", "compliance", "domain-model", "jurisdiction", "requirements"]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+loomground_vertical = ["py.typed"]
