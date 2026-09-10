@@ -2,6 +2,9 @@
 
 Domain-registration contract: the subject vocabulary, jurisdiction pack, and requirements house a vertical registers through.
 
+## Problem
+A new domain needs its own vocabulary, courts and requirement layout wired by hand. One registration surface: vocabulary, jurisdiction pack, requirements house.
+
 ## Install
 
 ```
@@ -28,9 +31,11 @@ for r in house.rooms:
     print(r.title, r.category, len(r.obligations))
 ```
 
+## Example
 ```
-Royalty Statement reporting 0
-Obligations on: licensee obligation 1
+in : build_house(domain="music-rights", title="Licensing duties", obligations=[…], artifacts=[…]).rooms
+out: Royalty Statement reporting 0
+     Obligations on: licensee obligation 1
 ```
 
 ## Contracts
