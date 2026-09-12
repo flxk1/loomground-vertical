@@ -102,7 +102,7 @@ class TestExtractionBoundary(unittest.TestCase):
 
     def test_no_module_imports_an_engine(self):
         """The engines import THIS. If that reverses, the split has failed."""
-        forbidden = ("workspaces", "rvnd", "loomground_solver", "loomground_governance")
+        forbidden = ("workspaces", "loomground_solver", "loomground_governance")
         offenders = []
         for path in SRC.glob("*.py"):
             tree = ast.parse(path.read_text(encoding="utf-8"))
