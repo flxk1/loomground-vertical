@@ -39,6 +39,6 @@ for r in house.rooms:
 Registries are process-global and additive. `build_house` takes atoms; text extraction stays in the host engine. Semantics and limits: `docs/semantics.md`.
 
 ## Family
-Domain-registration contract. The three registered artifacts: vocabulary, jurisdiction pack, requirements house. Consumes: stdlib only · consumed by: RVND and the domain verticals registering through it · pipeline position: outside the reasoning pipeline; the engine imports this package.
+Domain-registration contract. The three registered artifacts: vocabulary, jurisdiction pack, requirements house. Consumes: stdlib only · consumed by domain verticals and their hosts · pipeline position: outside the reasoning pipeline; the host imports this package.
 
 Language: loomground — guide https://github.com/flxk1/loomground/blob/main/llms.txt (the .lg language an agent reads, emits, validates); catalogue https://github.com/flxk1/loomground/blob/main/CATALOGUE.json

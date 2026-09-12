@@ -50,7 +50,7 @@ Registries are process-global and additive. `build_house` takes atoms; text extr
 
 ## Family
 
-Domain-registration contract. The three registered artifacts: vocabulary, jurisdiction pack, requirements house. Consumes: stdlib only · consumed by: RVND and the domain verticals registering through it · pipeline position: outside the reasoning pipeline; the engine imports this package.
+Domain-registration contract. The three registered artifacts: vocabulary, jurisdiction pack, requirements house. Consumes: stdlib only · consumed by domain verticals and their hosts · pipeline position: outside the reasoning pipeline; the host imports this package.
 
 ## Status
 
