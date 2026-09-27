@@ -56,6 +56,10 @@ Domain-registration contract. The three registered artifacts: vocabulary, jurisd
 
 Version 0.1.0 · 15 tests · 0 dependencies · Python >=3.10 · shipped: 2 vocabularies (`AI_ACT_VOCAB`, `NEUTRAL_VOCAB`) · 1 court pack (`de-eu`, 12 courts) · 3 judgment-marker packs (`de`, `eu`, `en-uk`).
 
+## How this is made
+
+The code and documentation are written with Loomground agents. The maintainer reads and corrects all of it.
+
 ## License
 
 Apache-2.0 · `LICENSES/Apache-2.0.txt` · `NOTICE`
