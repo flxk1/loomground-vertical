@@ -48,10 +48,8 @@ for r in house.rooms:
 ```
 
 ```
-courts registered: 13
-  'Royalty Statement' [reporting] obligations=0
-  'Obligations on: licensee' [obligation] obligations=1
-     SHALL licensee: account for royalties quarterly (s.15)
+Royalty Statement reporting 0
+Obligations on: licensee obligation 1
 ```
 
 Two room kinds are visible there: a **required artifact** becomes a room of its
@@ -92,8 +90,9 @@ jurisdictions present are the ones that have been needed so far.
 
 ## Limitations
 
-- The registries are process-global module state. Two verticals registering the
-  same `pack_id` both land; last write wins per key.
+- The registries are process-global module state. Registering a court pack or a
+  judgment-marker pack under an existing `pack_id` replaces that pack; instrument
+  vocabulary merges across packs, last write wins per key.
 - `build_house` links an obligation to an artifact room by keyword hints. It is
   a heuristic, and an obligation that names its artifact obliquely will land in
   a bearer room instead.
